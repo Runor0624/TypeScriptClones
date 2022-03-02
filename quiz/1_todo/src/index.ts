@@ -1,8 +1,15 @@
-let todoItems;
+// command + , 를 눌러 설정으로 들어간다
+// format on save 체크해제된걸 체크한다 (강의 완료 이후)
+
+// let todoItems; // 왜 빨간줄이 뜨는가 ? 타입지정 안해서!
+let todoItems : any;
+//type : any - 모든 타입을 다 받는다 , 얘만 사용하면 TS를 사용하는 의미가 없다.
+// 최초 JS -> TS로 전환하는 프로젝트는 타입을 any로만 했다가 > 점차 필요한 타입으로 구체화 하는방향으로 진행
+
 
 // api
 function fetchTodoItems() {
-  const todos = [
+  const todos : Array = [
     { id: 1, title: '안녕', done: false },
     { id: 2, title: '타입', done: false },
     { id: 3, title: '스크립트', done: false },
@@ -16,7 +23,8 @@ function fetchTodos() {
   return todos;
 }
 
-function addTodo(todo) {
+function addTodo(todo):void {
+  // void : 리턴값이 없을 경우에 사용한다. 
   todoItems.push(todo);
 }
 
