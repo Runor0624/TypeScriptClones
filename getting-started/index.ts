@@ -1,0 +1,1 @@
+// tsc 의 부가적 옵션을 적용시킬수 있는 파일 tsconfig.json

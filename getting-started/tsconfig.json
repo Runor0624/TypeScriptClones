@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "allowJs": true, //프로젝트 내부 자바스크립트 허용
+        "checkJs": true, // @ts-check 기능 과 동일
+        "noImplicitAny": true //모든 타입에 최소한 any라도 넣어야 작동하도록함
+    } // 타입스크립트로 변환시 타입스크립트가 이걸 어떻게 이해시킬지?
+}
