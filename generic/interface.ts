@@ -11,4 +11,4 @@ interface Dropdown<T> {
     selected: boolean;
 } // 타입선언 시점에 타입을 추가로 넘겨서 관련된 데이터를 변경하겠다 선언
 
-const obj: Dropdown<string> = {value: 'abc' , selected: false}; // value T하여 제네릭형태로 변경됨.
+const obj: Dropdown<number> = {value: 10 , selected: false}; // value T하여 제네릭형태로 변경됨.
